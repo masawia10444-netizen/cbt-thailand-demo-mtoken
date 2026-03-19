@@ -12,7 +12,7 @@ RUN npm install --legacy-peer-deps
 # Copy source and build
 COPY . .
 # We use build only, not build && start
-RUN npx env-cmd -f .env.production next build
+RUN npx env-cmd -f .env.uat next build
 
 # Stage 2: Runner
 FROM node:16-alpine AS runner
@@ -27,8 +27,8 @@ COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 
-# Using port 3001 as defined in package.json start:production
+# Using port 3001 as defined in package.json start:uat
 EXPOSE 3001
 
-# Start the application using the production script
-CMD ["npm", "run", "start:production"]
+# Start the application using the UAT script
+CMD ["npm", "run", "start:uat"]
