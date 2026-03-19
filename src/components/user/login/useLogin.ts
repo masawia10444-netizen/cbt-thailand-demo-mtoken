@@ -216,7 +216,8 @@ const useLogin = () => {
                                     email: profile.email,
                                     firstName: profile.firstName,
                                     lastName: profile.lastName,
-                                    citizenId: profile.citizenId,
+                                    citizenId: profile.citizenId || profile.userId, // Use userId as fallback for citizenId
+                                    userId: profile.userId, 
                                     stablePassword
                                 }
                             })

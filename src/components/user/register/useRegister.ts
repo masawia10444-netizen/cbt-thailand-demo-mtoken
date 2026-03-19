@@ -33,6 +33,7 @@ const useRegister = ({}) => {
 
             const isMTokenFlow = router.query.mtoken_flow === '1'
             const citizenId = router.query.citizenId as string || ''
+            const userId = router.query.userId as string || ''
 
             const registerData = await UserStore.register({
                 email: params.email,
@@ -42,7 +43,7 @@ const useRegister = ({}) => {
                 isAcceptPDPA: LayoutStore.isAcceptPDPA,
                 isAcceptPDPA2: LayoutStore.isAcceptPDPA2,
                 social: isMTokenFlow ? 'google' : undefined, 
-                googleID: isMTokenFlow ? (citizenId || `MTOKEN_${params.email}`) : undefined,
+                googleID: isMTokenFlow ? (citizenId || userId || `MTOKEN_${params.email}`) : undefined,
                 googleName: isMTokenFlow ? `${params.firstName} ${params.lastName}` : undefined,
             })
 

@@ -45,9 +45,9 @@ let RegisterView: React.FC<RegisterViewProps> = observer(
         return (
             <Formik
                 initialValues={{
-                    email: (router.query.email as string) || '',
-                    firstName: (router.query.firstName as string) || '',
-                    lastName: (router.query.lastName as string) || '',
+                    email: (router.query.email as string === 'null' ? '' : router.query.email as string) || '',
+                    firstName: (router.query.firstName as string === 'null' ? '' : router.query.firstName as string) || '',
+                    lastName: (router.query.lastName as string === 'null' ? '' : router.query.lastName as string) || '',
                     password: (router.query.stablePassword as string) || '',
                     confirmPassword: (router.query.stablePassword as string) || '',
                     acceptTerms: false,
@@ -96,11 +96,11 @@ let RegisterView: React.FC<RegisterViewProps> = observer(
                                     type='email'
                                     validate={validateEmail}
                                     required
-                                    clearable={!isMTokenFlow}
-                                    disabled={isMTokenFlow}
+                                    clearable={!isMTokenFlow || !values.email || values.email === 'null'}
+                                    disabled={isMTokenFlow && values.email && values.email !== 'null'}
                                 />
                             </Grid>
-
+ 
                             <Grid item xs={12} className={classes.textField}>
                                 <Field
                                     name='firstName'
@@ -110,11 +110,11 @@ let RegisterView: React.FC<RegisterViewProps> = observer(
                                     type='text'
                                     validate={validateRequired}
                                     required
-                                    clearable={!isMTokenFlow}
-                                    disabled={isMTokenFlow}
+                                    clearable={!isMTokenFlow || !values.firstName || values.firstName === 'null'}
+                                    disabled={isMTokenFlow && values.firstName && values.firstName !== 'null'}
                                 />
                             </Grid>
-
+ 
                             <Grid item xs={12} className={classes.textField}>
                                 <Field
                                     name='lastName'
@@ -124,8 +124,8 @@ let RegisterView: React.FC<RegisterViewProps> = observer(
                                     type='text'
                                     validate={validateRequired}
                                     required
-                                    clearable={!isMTokenFlow}
-                                    disabled={isMTokenFlow}
+                                    clearable={!isMTokenFlow || !values.lastName || values.lastName === 'null'}
+                                    disabled={isMTokenFlow && values.lastName && values.lastName !== 'null'}
                                 />
                             </Grid>
 
