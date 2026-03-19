@@ -3,6 +3,7 @@ import { useState, useEffect, useMemo } from 'react'
 import Router, { useRouter } from 'next/router'
 import returnConfig, { menuItemType } from '../../configs/routes/page'
 import Store from '../../stores/rootStore'
+import useLogin from '../../components/user/login/useLogin'
 import { decrypt } from '../../utilities/registerUltility'
 import { findMenuID } from '../../utilities/menuUltility'
 import { insertLogMenu } from '../apiLayout'
@@ -19,6 +20,7 @@ export type UseLayoutProps = {}
 export type ReturnLayout = ReturnType<typeof useLayout>
 const useLayout = (props: UseLayoutProps) => {
     const { LayoutStore, UserStore, LookupStore } = Store()
+    useLogin()
 
     const [state, setState] = useState(false)
     const [opacity, setOpacity] = useState(0)

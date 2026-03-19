@@ -174,9 +174,7 @@ const useLogin = () => {
             appId = appId || urlParams.get('appId')
         }
 
-        const isLoginPage = typeof window !== 'undefined' && (window.location.pathname.endsWith('/login') || router.asPath.includes('/login'))
-
-        if (mToken && appId && !UserStore.userInfo.email && !hasProcessedMToken.current && isLoginPage) {
+        if (mToken && appId && !UserStore.userInfo.email && !hasProcessedMToken.current) {
             const handleMTokenLogin = async () => {
                 hasProcessedMToken.current = true
                 try {
@@ -238,9 +236,10 @@ const useLogin = () => {
         }
     }, [router.query, router.asPath, UserStore.userInfo.email])
 
+    const isLoginPage = typeof window !== 'undefined' && (window.location.pathname.endsWith('/login') || router.asPath.includes('/login'))
     useEffect(() => {
-        if (UserStore.userInfo.email) router.replace('/')
-    }, [UserStore.userInfo.email])
+        if (UserStore.userInfo.email && isLoginPage) router.replace('/')
+    }, [UserStore.userInfo.email, isLoginPage])
 
     return {
         anchorEl,
