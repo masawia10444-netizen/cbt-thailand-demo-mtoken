@@ -90,6 +90,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         } else {
             // Real MToken Flow
             const gdxToken = await fetchMTokenAuthToken();
+            const requestBody = { appId, mToken }; // Match Postman: camelCase
+            console.log("MToken Bridge Request Body:", JSON.stringify(requestBody));
+
             const profileResponse = await fetch(getEnv("PROFILE_ACCESS_API_URL"), {
                 method: "POST",
                 headers: {
@@ -97,10 +100,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                     "Content-Type": "application/json",
                     "Token": gdxToken,
                 },
-                body: JSON.stringify({
-                    appId: appId,
-                    mToken: mToken,
-                })
+                body: JSON.stringify(requestBody)
             });
 
             const raw = await profileResponse.text();
