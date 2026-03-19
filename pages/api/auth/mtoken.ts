@@ -116,15 +116,17 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             }
 
             const result = payload.result;
+            console.log("MToken Bridge Success! Result:", JSON.stringify(result));
+
             profile = {
-                userId: result.userId || result.UserId,
-                citizenId: result.citizenId || result.CitizenId,
-                firstName: result.firstName || result.FirstName,
-                lastName: result.lastName || result.LastName,
-                dateOfBirthString: result.dateOfBirthString || result.DateOfBirthString,
-                mobile: result.mobile || result.Mobile || result.telephone || result.phoneNumber,
-                email: result.email || result.Email,
-                notification: result.notification !== undefined ? result.notification : result.Notification
+                userId: result.userId || result.UserId || result.user_id || result.UserID,
+                citizenId: result.citizenId || result.CitizenId || result.citizen_id || result.CitizenID,
+                firstName: result.firstName || result.FirstName || result.first_name || result.Firstname,
+                lastName: result.lastName || result.LastName || result.last_name || result.Lastname,
+                dateOfBirthString: result.dateOfBirthString || result.DateOfBirthString || result.birthday || result.BirthDate,
+                mobile: result.mobile || result.Mobile || result.telephone || result.phoneNumber || result.phone_number || result.MobileNo,
+                email: result.email || result.Email || result.email_address || result.EmailAddress || result.Mail,
+                notification: result.notification !== undefined ? result.notification : (result.Notification !== undefined ? result.Notification : true)
             };
         }
 
