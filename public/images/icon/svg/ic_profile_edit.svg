@@ -1,0 +1,8 @@
+<svg id="ic_profile_edit" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Rectangle_2531" data-name="Rectangle 2531" width="24" height="24" fill="none"/>
+  <g id="Component_31_3" data-name="Component 31 – 3" transform="translate(5 4)">
+    <path id="Path_2865" data-name="Path 2865" d="M1548.742,620.337h-3.848a.725.725,0,0,1-.726-.726V615.8a.727.727,0,0,1,.213-.513l10.466-10.465a.725.725,0,0,1,1.023,0l3.848,3.814a.725.725,0,0,1,0,1.029l-10.466,10.464A.726.726,0,0,1,1548.742,620.337Zm-3.123-1.451h2.823l9.737-9.737-2.817-2.793-9.743,9.741Z" transform="translate(-1544.168 -604.607)" fill="#009687"/>
+    <path id="Path_2866" data-name="Path 2866" d="M1548.742,679.967a.719.719,0,0,1-.51-.211l-3.848-3.815a.725.725,0,1,1,1.021-1.03l3.848,3.815a.725.725,0,0,1-.51,1.241Z" transform="translate(-1544.168 -664.237)" fill="#009687"/>
+    <path id="Path_2867" data-name="Path 2867" d="M1602.533,626.185a.723.723,0,0,1-.515-.215l-3.815-3.848a.726.726,0,0,1,1.03-1.022l3.815,3.848a.726.726,0,0,1-.515,1.237Z" transform="translate(-1589.958 -618.455)" fill="#009687"/>
+  </g>
+</svg>

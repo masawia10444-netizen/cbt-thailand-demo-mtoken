@@ -1,0 +1,90 @@
+html,
+body,
+#__next {
+    /* position: relative; */
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'Prompt-Regular';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    min-height: 100%;
+    height: 100%;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #166936;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #166936;
+}
+
+.esri-zoom {
+    box-shadow: 0px 10px 20px #00000029 !important;
+    height: 80px;
+    width: 35px;
+}
+
+.esri-component {
+    border-radius: 23px !important;
+}
+
+.esri-widget--button {
+    border-radius: 23px !important;
+}
+
+.esri-zoom .esri-widget--button:first-child {
+    border-top: none !important;
+    margin-top: 8px !important;
+    margin-left: 1px !important;
+    background: transparent;
+}
+.esri-zoom .esri-widget--button:last-child {
+    border-top: none !important;
+    margin-left: 1px !important;
+    background: transparent;
+}
+
+.esri-widget--button {
+    color: #7b7b7b !important;
+    width: 35px !important;
+}
+.esri-icon-plus,
+.esri-icon-minus {
+    font-size: 14px !important;
+    font-weight: bolder !important;
+    color: #7b7b7b !important;
+}
+
+.esri-ui-top-left {
+    right: 0px !important;
+    left: unset !important;
+}

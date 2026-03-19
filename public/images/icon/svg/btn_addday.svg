@@ -1,0 +1,9 @@
+<svg id="btn_addday" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="Rectangle_2371" data-name="Rectangle 2371" fill="none" stroke="#80bd01" stroke-width="1">
+    <rect width="36" height="36" rx="6" stroke="none"/>
+    <rect x="0.5" y="0.5" width="35" height="35" rx="5.5" fill="none"/>
+  </g>
+  <g id="Group_2133" data-name="Group 2133" transform="translate(11.999 12)">
+    <path id="Path_2698" data-name="Path 2698" d="M374.283,655.086h-2.911v4.366h-4.366v2.911h4.366v4.366h2.911v-4.366h4.366v-2.911h-4.366Z" transform="translate(-367.006 -655.086)" fill="#80bd01"/>
+  </g>
+</svg>

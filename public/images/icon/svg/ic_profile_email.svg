@@ -1,0 +1,8 @@
+<svg id="ic_profile_email" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Rectangle_2529" data-name="Rectangle 2529" width="24" height="24" fill="none"/>
+  <g id="Component_30_3" data-name="Component 30 – 3" transform="translate(4.441 6.27)">
+    <path id="Path_2861" data-name="Path 2861" d="M1408.636,614.583h-14.313a.726.726,0,0,1-.726-.726V604.1a.726.726,0,0,1,.726-.726h14.313a.726.726,0,0,1,.726.726v9.756A.726.726,0,0,1,1408.636,614.583Zm-13.588-1.451h12.862v-8.3h-12.862Z" transform="translate(-1393.597 -603.375)" fill="#c4e6d2"/>
+    <path id="Path_2862" data-name="Path 2862" d="M1401.478,609.686a.719.719,0,0,1-.407-.126l-7.157-4.861a.725.725,0,1,1,.815-1.2l7.157,4.861a.726.726,0,0,1-.408,1.326Z" transform="translate(-1393.596 -603.373)" fill="#c4e6d2"/>
+    <path id="Path_2863" data-name="Path 2863" d="M1442.265,610.263a.726.726,0,0,1-.409-1.326l6.988-4.76a.726.726,0,1,1,.818,1.2l-6.988,4.76A.725.725,0,0,1,1442.265,610.263Z" transform="translate(-1434.381 -603.95)" fill="#c4e6d2"/>
+  </g>
+</svg>

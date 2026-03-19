@@ -1,0 +1,111 @@
+export const FOOTER = {
+    TH: {
+        CBT: 'อพท',
+        COMPANY_NAME: 'องค์การบริหารการพัฒนาพื้นที่พิเศษเพื่อการท่องเที่ยวอย่างยั่งยืน (องค์การมหาชน)',
+        COMPANY_ADDRESS: '118/1 อาคารทิปโก้ ชั้น 30-31 ถนนพระราม 6 แขวงพญาไท เขตพญาไท กรุงเทพฯ 10400',
+        CONTACT_TEXT: 'ติดต่อเรา',
+        CONTACT: {
+            EMAIL: 'tis@dasta.or.th',
+            FACEBOOK: 'dastathailand',
+            FAX: '02-357-3599',
+            TEL: '02-357-3580-7',
+            TEL_HOME: '02-357-3580-402',
+        },
+        MAIN_MENU: {},
+        WEB_SITE_POLICY: {
+            TITLE: 'นโยบายเว็บไซต์',
+            DISCLAMINER: 'การปฏิเสธความรับผิด (Disclaimer)',
+            WEBSITE_POLICY: 'นโยบายเว็บไซต์ (Website Policy)',
+            PRIVACY_POLICY: 'นโยบายการคุ้มครองข้อมูลส่วนบุคคล (Privacy Policy)',
+            WEBSITE_PRIVACY_POLICY: 'นโยบายเว็บไซต์และการคุ้มครองข้อมูลส่วนบุคคล (Privacy Policy)',
+            WEBSITE_SECURITY_POLICY: 'นโยบายการรักษาความมั่นคงปลอดภัยของเว็บไซต์ (Website Security Policy)',
+        },
+        PUBLIC_MEDIA: {
+            TITLE: 'สื่อประชาสัมพันธ์',
+            TV_VDO_MEDIA: 'สื่อโทรทัศน์/วิดีโอ',
+            RADIO_AUDIO: 'วิทยุ/คลิปเสียง',
+            PRINTING_MEDIA: 'สื่อสิ่งพิมพ์',
+            CBT_TRAVEL: 'อพท. Travel',
+            E_BOOK: 'E-book',
+            GALLERY: 'คลังภาพ',
+        },
+        SYSTEM_REF_TEXT: 'ระบบที่เกี่ยวข้อง',
+        SYSTEM_REF: {
+            REPORT_MANAGE: 'สำหรับเจ้าหน้าที่ อพท.', //สำหรับเจ้าหน้าที่
+            COMMUNITY_WORK: 'สำหรับชุมชนท่องเที่ยว',
+            WEB_SELF: 'ระบบประเมินผลตนเอง (Web-Self Assessment)',
+            WEB_CMS: 'ระบบฐานข้อมูลการท่องเที่ยวโดยชุมชน (Web-CMS)',
+            WEB_BASE: 'ระบบฐานข้อมูลการท่องเที่ยวโดยชุมชน  (Web-Base)​',
+            OWNER_CBT: 'เจ้าหน้าที่ อพท.',
+            DEVELOPER_PUBLIC: 'สำหรับนักพัฒนาทั่วไป',//สำหรับนักพัฒนาทั่วไป (Developer)
+            DEVELOPER_API: 'ระบบการให้บริการข้อมูลในรูปแบบ API',
+        },
+        LINK_REF_TEXT: 'ลิงค์ที่เกี่ยวข้อง',
+        LINK_REF: {
+            SYSTEM_STIS: 'ระบบสารสนเทศเพื่อการท่องเที่ยวอย่างยั่งยืน (STIS)',
+            CBT_WEB: 'อพท (เว็บไซต์)',
+            TOURISM: 'องค์ความรู้ด้านการท่องเที่ยวอย่างยั่งยืน',
+        },
+        COPYRIGHT:
+            'Copyright © 2020 องค์การบริหารการพัฒนาพื้นที่พิเศษเพื่อการท่องเที่ยวอย่างยั่งยืน (องค์การมหาชน). All Rights Reserved.',
+    },
+    EN: {
+        CBT: 'CBT',
+        COMPANY_NAME: 'Designated Areas for Sustainable Tourism Administration (Public Organization)',
+        COMPANY_ADDRESS:
+            '118/1 Tipco Building, 31st Floor, Rama 6 Road, Phayathai Subdistrict, Phaya Thai District, Bangkok 10400',
+        // CONTACT: {
+
+        //     TEL: 'Tel : 0 2357 3580-7',
+        //     FAX: 'Fax : 0 2357 3599',
+        //     EMAIL: 'E-mail : contact@dasta.or.th',
+        //     // CALL_CENTER: 'call center 0 2357 3580-402',
+        // },
+        CONTACT_TEXT: 'Contact Us',
+        CONTACT: {
+            EMAIL: 'tis@dasta.or.th',
+            FACEBOOK: 'dastathailand',
+            FAX: '02-357-3599',
+            TEL: '02-357-3580-7',
+            TEL_HOME: '02-357-3580-402',
+        },
+        MAIN_MENU: {},
+        WEB_SITE_POLICY: {
+            TITLE: 'Website Policy',
+            DISCLAMINER: 'Disclaimer',
+            WEBSITE_POLICY: 'Website Policy',
+            PRIVACY_POLICY: 'Privacy Policy',
+            WEBSITE_PRIVACY_POLICY: 'Privacy Policy',
+            WEBSITE_SECURITY_POLICY: 'Website Security Policy',
+        },
+        PUBLIC_MEDIA: {
+            TITLE: 'Public Media',
+            TV_VDO_MEDIA: 'VDO Media',
+            RADIO_AUDIO: 'Audio Media',
+            PRINTING_MEDIA: 'Publication Media',
+            CBT_TRAVEL: 'Dasta Travel',
+            E_BOOK: 'E-book',
+            GALLERY: 'Photo Gallery',
+        },
+        SYSTEM_REF_TEXT: 'Related System',
+        SYSTEM_REF: {
+            //REPORT_MANAGE: 'Executive report',
+            REPORT_MANAGE: 'For CBT Staff',
+            COMMUNITY_WORK: 'For Community organization',
+            WEB_SELF: 'Self Assessment System',
+            WEB_CMS: ' Content Management System',
+            WEB_BASE: 'Community tourism database system',
+            OWNER_CBT: 'CBT Staff',
+            DEVELOPER_PUBLIC: 'For Developer',
+            DEVELOPER_API: 'API Service System',
+        },
+        LINK_REF_TEXT: 'Related Link',
+        LINK_REF: {
+            SYSTEM_STIS: 'Sustainable Tourism Information System',
+            CBT_WEB: 'CBT (Website)',
+            TOURISM: 'Knowledge of sustainable tourism',
+        },
+        COPYRIGHT:
+            'Copyright © 2020 Designated Areas for Sustainable Tourism Administration (Public Organization). All Rights Reserved.',
+    },
+}

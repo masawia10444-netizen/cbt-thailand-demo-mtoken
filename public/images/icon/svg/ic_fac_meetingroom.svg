@@ -1,0 +1,13 @@
+<svg id="ic_fac_meetingroom" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="Rectangle_2450" data-name="Rectangle 2450" width="32" height="32" fill="none"/>
+  <g id="Component_75_1" data-name="Component 75 – 1" transform="translate(3 4)">
+    <circle id="Ellipse_427" data-name="Ellipse 427" cx="2" cy="2" r="2" transform="translate(19 2)" fill="#84c9c2"/>
+    <path id="Path_3077" data-name="Path 3077" d="M1872.006,372.086a2,2,0,0,0-2-2h-2.582l-3.711-3.707-1.414,1.415,3.707,3.7v11.59h2v-6h1v6h2v-6h1Z" transform="translate(-1848.006 -363.086)" fill="#84c9c2"/>
+    <path id="Path_3078" data-name="Path 3078" d="M1854.006,385.086a2,2,0,0,0-2-2h-2a2,2,0,0,0-2,2v2h6Z" transform="translate(-1848.006 -363.086)" fill="#84c9c2"/>
+    <circle id="Ellipse_428" data-name="Ellipse 428" cx="2" cy="2" r="2" transform="translate(1 15)" fill="#84c9c2"/>
+    <path id="Path_3079" data-name="Path 3079" d="M1855.006,385.086v2h6v-2a2,2,0,0,0-2-2h-2A2,2,0,0,0,1855.006,385.086Z" transform="translate(-1848.006 -363.086)" fill="#84c9c2"/>
+    <circle id="Ellipse_429" data-name="Ellipse 429" cx="2" cy="2" r="2" transform="translate(8 15)" fill="#84c9c2"/>
+    <rect id="Rectangle_2441" data-name="Rectangle 2441" width="10" height="2" transform="translate(14 21)" fill="#84c9c2"/>
+    <path id="Path_3080" data-name="Path 3080" d="M1864.006,375.086h-14v-10h15v-2h-17v14h16Z" transform="translate(-1848.006 -363.086)" fill="#84c9c2"/>
+  </g>
+</svg>

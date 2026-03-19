@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="106" height="115.258" viewBox="0 0 106 115.258">
+  <defs>
+    <filter id="Path_2902" x="0" y="0" width="106" height="115.258" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.271"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="pin_event-festival" transform="translate(9 3)">
+    <g id="Group_1989" data-name="Group 1989" transform="translate(-44 -881)">
+      <g transform="matrix(1, 0, 0, 1, 35, 878)" filter="url(#Path_2902)">
+        <path id="Path_2902-2" data-name="Path 2902" d="M304.679-204.1a44,44,0,0,0-44-44,44,44,0,0,0-44,44,44,44,0,0,0,37.854,43.563l6.146,9.694,6.147-9.694A44,44,0,0,0,304.679-204.1Z" transform="translate(-207.68 251.1)" fill="#fff"/>
+      </g>
+      <circle id="Ellipse_378" data-name="Ellipse 378" cx="37" cy="37" r="37" transform="translate(51 887.998)" fill="#009687"/>
+    </g>
+    <g id="Group_1996" data-name="Group 1996" transform="translate(-812.819 317.684)">
+      <path id="Path_2903" data-name="Path 2903" d="M864.168-274.36l6.606-6.606a6.68,6.68,0,0,0,0-9.448l-6.606-6.606-6.606,6.606a6.68,6.68,0,0,0,0,9.448Z" transform="translate(-7.783 -1)" fill="#fff"/>
+      <path id="Path_2904" data-name="Path 2904" d="M864.168-259.408l-6.606,6.606a6.68,6.68,0,0,0,0,9.448l6.606,6.606,6.606-6.606a6.68,6.68,0,0,0,0-9.448Z" transform="translate(-7.783 -11.734)" fill="#fff"/>
+      <path id="Path_2905" data-name="Path 2905" d="M886.281-272.073a6.681,6.681,0,0,0-9.448,0l-6.606,6.606,6.606,6.606a6.68,6.68,0,0,0,9.448,0l6.606-6.606Z" transform="translate(-11.734 -7.784)" fill="#fff"/>
+      <path id="Path_2906" data-name="Path 2906" d="M855.276-265.468l-6.606-6.606a6.681,6.681,0,0,0-9.448,0l-6.606,6.606,6.606,6.606a6.68,6.68,0,0,0,9.448,0Z" transform="translate(-1 -7.784)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,68 @@
+export const REGISTER = {
+    TH: {
+        TITLE: 'ลงทะเบียนเข้าใช้งาน',
+        FORM: {
+            EMAIL: 'อีเมล',
+            FIRST_NAME: 'ชื่อ',
+            LAST_NAME: 'นามสกุล',
+            PASSWORD: 'รหัสผ่าน',
+            CONFIRM_PASSWORD: 'ยืนยันรหัสผ่าน',
+        },
+        ACCEPT: 'ยอมรับ',
+        POLICY: 'เงื่อนไขการใช้งานและนโยบายความเป็นส่วนตัว',
+        VERIFY: {
+            TITLE: 'ตรวจสอบอีเมลของคุณ',
+            DESCRIPTION: 'เราส่งอีเมลหาคุณเพื่อยืนยันที่อยู่อีเมล กรุณาตรวจสอบกล่องจดหมายในอีเมลที่ใช้ในการลงทะเบียน',
+            BACK_TO_HOMEPAGE: 'กลับสู่หน้าแรก',
+            VERIFY_SUCCESS: 'ยืนยันอีเมลสำเร็จ',
+        },
+        BTN_OK_TEXT: 'ตกลง',
+        BTN_CANCEL_TEXT: 'ยกเลิก',
+        SUCCESS_REGISTER_TRIP_MAIN_TEXT: 'ลงทะเบียนสำเร็จ',
+        SUCCESS_REGISTER_TRIP_MINOR_TEXT: 'หากคุณต้องการเข้าสู่ระบบ สามารถไปเมนูเข้าสู่ระบบ',
+        HAVE_REGISTER_TRIP_MAIN_TEXT: 'อีเมลนี้มีอยู่ในระบบอยู่แล้ว',
+        HAVE_REGISTER_TRIP_MINOR_TEXT: 'หากต้องการสมัครสมาชิก สามารถเปลี่ยนอีเมลที่ไม่มีอยู่ในระบบได้',
+        ERROR_SYSTEM_MAIN_TEXT: 'ระบบเกิดข้อผิดพลาด',
+        ERROR_SYSTEM_MINOR_TEXT: 'กรุณาติดต่อเจ้าหน้าที่ 0 2357 3590',
+        RESET_PASSWORD: {
+            TOKEN_FAIL: 'คำร้องขอเปลี่ยนรหัสผ่านหมดอายุ',
+            DESCRIPTION_FAIL: 'คำร้องขอเปลี่ยนรหัสผ่านของคุณหมดอายุ กรุณาตรวจสอบกล่องจดหมายในอีเมลที่ขอเปลี่ยนรหัสผ่าน',
+            TOKEN_SUCCESS: 'เปลี่ยนรหัสผ่านสำเร็จ',
+            DESCRIPTION_SUCCESS: 'เปลี่ยนรหัสผ่านสำเร็จ คุณสามารถเข้าสู่ระบบได้ด้วยรหัสผ่านใหม่',
+        },
+    },
+    EN: {
+        TITLE: 'Registration',
+        FORM: {
+            EMAIL: 'E-mail',
+            FIRST_NAME: 'Name',
+            LAST_NAME: 'Lastname',
+            PASSWORD: 'Password',
+            CONFIRM_PASSWORD: 'Confirm Password',
+        },
+        ACCEPT: 'Accept',
+        POLICY: 'Term of Service & Privacy Policy',
+        VERIFY: {
+            TITLE: 'Check your email',
+            DESCRIPTION:
+                'We send you an email to confirm your email address. Please check your registered email inbox.',
+            BACK_TO_HOMEPAGE: 'Back to homepage',
+            VERIFY_SUCCESS: 'Verify your email success',
+        },
+        BTN_OK_TEXT: 'OK',
+        BTN_CANCEL_TEXT: 'Cancel',
+        SUCCESS_REGISTER_TRIP_MAIN_TEXT: 'Register Successfully',
+        SUCCESS_REGISTER_TRIP_MINOR_TEXT: 'If you want to login, Click Login',
+        HAVE_REGISTER_TRIP_MAIN_TEXT: 'This email already exists',
+        HAVE_REGISTER_TRIP_MINOR_TEXT: 'If you want to register you can change email that do not exist in the system.',
+        ERROR_SYSTEM_MAIN_TEXT: 'System error',
+        ERROR_SYSTEM_MINOR_TEXT: 'Please contact staff 0 2357 3590.',
+        RESET_PASSWORD: {
+            TOKEN_FAIL: 'Forgot password request expired',
+            DESCRIPTION_FAIL:
+                'Your forgot password request expired. Please check the inbox in the email used for registration.',
+            TOKEN_SUCCESS: 'Change password success',
+            DESCRIPTION_SUCCESS: 'Change password success. Please login with new password.',
+        },
+    },
+}

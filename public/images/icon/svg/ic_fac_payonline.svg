@@ -1,0 +1,9 @@
+<svg id="ic_fac_payonline" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="Rectangle_2459" data-name="Rectangle 2459" width="32" height="32" fill="none"/>
+  <g id="Component_77_1" data-name="Component 77 – 1" transform="translate(8 4)">
+    <path id="Path_2807" data-name="Path 2807" d="M1747.5,1032h-13a1.5,1.5,0,0,1-1.5-1.5v-21a1.5,1.5,0,0,1,1.5-1.5h13a1.5,1.5,0,0,1,1.5,1.5v21A1.5,1.5,0,0,1,1747.5,1032Zm-13-23a.5.5,0,0,0-.5.5v21a.5.5,0,0,0,.5.5h13a.5.5,0,0,0,.5-.5v-21a.5.5,0,0,0-.5-.5Z" transform="translate(-1733 -1008)" fill="#84c9c2" stroke="#84c9c2" stroke-width="1"/>
+    <path id="Path_2808" data-name="Path 2808" d="M1748.5,1027h-15a.5.5,0,0,1,0-1h15a.5.5,0,0,1,0,1Z" transform="translate(-1733 -1008)" fill="#84c9c2" stroke="#84c9c2" stroke-width="1"/>
+    <path id="Path_2809" data-name="Path 2809" d="M1748.5,1012h-15a.5.5,0,0,1,0-1h15a.5.5,0,0,1,0,1Z" transform="translate(-1733 -1008)" fill="#84c9c2" stroke="#84c9c2" stroke-width="1"/>
+    <circle id="Ellipse_356" data-name="Ellipse 356" cx="1" cy="1" r="1" transform="translate(7 20)" fill="#84c9c2" stroke="#84c9c2" stroke-width="1"/>
+  </g>
+</svg>

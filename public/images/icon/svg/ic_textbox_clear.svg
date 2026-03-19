@@ -1,0 +1,10 @@
+<svg id="ic_textbox_clear" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Rectangle_1492" data-name="Rectangle 1492" width="24" height="24" fill="none"/>
+  <g id="Group_795" data-name="Group 795" transform="translate(-1256.402 -300)">
+    <g id="Group_622" data-name="Group 622" transform="translate(1276.402 304.25) rotate(90)">
+      <path id="Path_216" data-name="Path 216" d="M345.206,210.841a8,8,0,1,1,8-8.017A8.018,8.018,0,0,1,345.206,210.841Zm0-14.524a6.524,6.524,0,1,0,6.527,6.506A6.524,6.524,0,0,0,345.206,196.317Z" transform="translate(-337.206 -194.841)" fill="#414d45"/>
+      <path id="Path_217" data-name="Path 217" d="M373.679,235.588a.742.742,0,0,1-.527-1.264l3.728-3.763a.742.742,0,0,1,1.055,1.045l-3.728,3.763A.741.741,0,0,1,373.679,235.588Z" transform="translate(-367.542 -224.965)" fill="#414d45"/>
+      <path id="Path_218" data-name="Path 218" d="M377.407,235.588a.741.741,0,0,1-.527-.219l-3.728-3.763a.742.742,0,0,1,1.055-1.045l3.728,3.763a.742.742,0,0,1-.527,1.264Z" transform="translate(-367.542 -224.965)" fill="#414d45"/>
+    </g>
+  </g>
+</svg>

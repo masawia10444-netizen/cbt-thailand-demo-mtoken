@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Prompt-Light';
+  src: url('Prompt/Prompt-Light.ttf') format('truetype');
+}
+  
+  @font-face {
+    font-family: 'Prompt-Regular';
+    src: url('Prompt/Prompt-Regular.ttf') format('truetype'),
+    url('Prompt/Prompt-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Prompt-Medium';
+    src: url('Prompt/Prompt-Medium.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Prompt-SemiBold';
+    src: url('Prompt/Prompt-SemiBold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Prompt-Bold';
+    src: url('Prompt/Prompt-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Sarabun-Regular';
+    src: url('Sarabun/Sarabun-Regular.ttf') format('truetype'),
+  }
+  
+  @font-face {
+    font-family: 'Sarabun';
+    src: url('Sarabun/Sarabun-Medium.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Sarabun-SemiBold';
+    src: url('Sarabun/Sarabun-SemiBold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Sarabun-Bold';
+    src: url('Sarabun/Sarabun-Bold.ttf') format('truetype');
+  }
+  
+  html,
+  body {
+    font-family: 'Prompt';
+    box-sizing: border-box;
+  }

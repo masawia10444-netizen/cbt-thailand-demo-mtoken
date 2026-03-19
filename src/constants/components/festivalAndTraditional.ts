@@ -1,0 +1,48 @@
+export const FESTIVAL = {
+    TH: {
+        FESTIVALANDTRADITIONAL: {
+            TITLE: 'เทศกาลและประเพณี',
+        },
+        ALL_FESTIVAL: 'เทศกาลและประเพณีทั้งหมด',
+        ARRANGEMENT: 'การจัดเรียง',
+        PUBLISH_DATE: 'วันโปรโมท',
+        START_DATE: 'วันที่เริ่มต้น',
+        DATE: 'ช่วงวัน (1-30)',
+        PROVINCE: 'จังหวัด',
+        COMMUNITY: 'ชุมชน',
+        KEYWORD: 'คำค้นหา',
+        CONTENT: {
+            FESTIVAL_TRADITIONAL_DETAIL: 'รายละเอียดเทศกาลและประเพณี',
+            MONTH_PERIOD: 'ช่วงเวลาที่เหมาะสม',
+            CONTACTS: 'ข้อมูลผู้ติดต่อ',
+            TEL: 'โทร',
+            EMAIL: 'อีเมล',
+            WEBSITE: 'เว็บไซต์',
+            ADDRESS: 'ที่อยู่',
+            TAG: 'แท็กที่เกี่ยวข้อง',
+        },
+    },
+    EN: {
+        FESTIVALANDTRADITIONAL: {
+            TITLE: 'Festivals and Traditions ',
+        },
+        ALL_FESTIVAL: 'All Festivals and Traditions ',
+        ARRANGEMENT: 'Sort by',
+        PUBLISH_DATE: 'Publish Date',
+        START_DATE: 'Start Date',
+        DATE: 'Date',
+        PROVINCE: 'Province',
+        COMMUNITY: 'Community',
+        KEYWORD: 'Keyword',
+        CONTENT: {
+            FESTIVAL_TRADITIONAL_DETAIL: 'Festivals and Traditions datails',
+            MONTH_PERIOD: 'Appropriate season for travel',
+            CONTACTS: 'Contact Information',
+            TEL: 'Tel.',
+            EMAIL: 'E-mail',
+            WEBSITE: 'Website',
+            ADDRESS: 'Address',
+            TAG: 'Related Tags',
+        },
+    },
+}

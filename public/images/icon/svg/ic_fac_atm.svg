@@ -1,0 +1,9 @@
+<svg id="ic_fac_atm" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="Rectangle_2446" data-name="Rectangle 2446" width="32" height="32" fill="none"/>
+  <g id="Component_67_1" data-name="Component 67 – 1" transform="translate(3 9.181)">
+    <path id="Path_2787" data-name="Path 2787" d="M983.652,932.819H961.577A1.579,1.579,0,0,1,960,931.242V917.577A1.579,1.579,0,0,1,961.577,916h22.075a1.579,1.579,0,0,1,1.577,1.577v13.665A1.579,1.579,0,0,1,983.652,932.819Zm-22.075-15.768a.527.527,0,0,0-.526.526v13.665a.527.527,0,0,0,.526.526h22.075a.527.527,0,0,0,.526-.526V917.577a.527.527,0,0,0-.526-.526Z" transform="translate(-960 -916)" fill="#84c9c2" stroke="#84c9c2" stroke-width="1"/>
+    <path id="Path_2788" data-name="Path 2788" d="M984.7,923.2H960.526a.526.526,0,0,1-.526-.526v-3.154a.526.526,0,0,1,.526-.526H984.7a.526.526,0,0,1,.526.526v3.154A.526.526,0,0,1,984.7,923.2Zm-23.652-1.051h23.126v-2.1H961.051Z" transform="translate(-960 -915.847)" fill="#84c9c2" stroke="#84c9c2" stroke-width="1"/>
+    <path id="Path_2789" data-name="Path 2789" d="M966.73,928.051h-4.2a.526.526,0,0,1,0-1.051h4.2a.526.526,0,0,1,0,1.051Z" transform="translate(-959.897 -915.437)" fill="#84c9c2" stroke="#84c9c2" stroke-width="1"/>
+    <path id="Path_2790" data-name="Path 2790" d="M972.679,928.051h-3.154a.526.526,0,0,1,0-1.051h3.154a.526.526,0,0,1,0,1.051Z" transform="translate(-959.54 -915.437)" fill="#84c9c2" stroke="#84c9c2" stroke-width="1"/>
+  </g>
+</svg>

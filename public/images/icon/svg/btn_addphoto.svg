@@ -1,0 +1,14 @@
+<svg id="btn_addphoto" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <circle id="Ellipse_430" data-name="Ellipse 430" cx="20" cy="20" r="20" fill="#fff"/>
+  <g id="Group_2228" data-name="Group 2228" transform="translate(11.109 12.344)">
+    <g id="Group_2225" data-name="Group 2225" transform="translate(0)">
+      <path id="Path_3084" data-name="Path 3084" d="M953.947,779.823H938.409a.717.717,0,0,1-.718-.717V766.157a.717.717,0,0,1,.718-.717h15.538a.717.717,0,0,1,.717.717v12.949a.717.717,0,0,1-.717.717Zm-14.822-1.435h14.1V766.874h-14.1v11.514Z" transform="translate(-937.691 -765.44)" fill="#6b716b"/>
+    </g>
+    <g id="Group_2226" data-name="Group 2226" transform="translate(0 4.56)">
+      <path id="Path_3085" data-name="Path 3085" d="M953.476,778.908a.715.715,0,0,1-.467-.172l-2.883-2.471-3.587,2.391-4.551-4.9-3.065,3.164a.717.717,0,0,1-1.03-1l4.117-4.251,4.75,5.11,3.475-2.317,3.708,3.178a.717.717,0,0,1-.467,1.262Z" transform="translate(-937.69 -771.676)" fill="#6b716b"/>
+    </g>
+    <g id="Group_2227" data-name="Group 2227" transform="translate(6.769 1.972)">
+      <path id="Path_3086" data-name="Path 3086" d="M949.518,773.28a2.571,2.571,0,1,1,2.57-2.572,2.575,2.575,0,0,1-2.57,2.572Zm0-3.708a1.137,1.137,0,1,0,1.136,1.136,1.139,1.139,0,0,0-1.136-1.136Z" transform="translate(-946.946 -768.137)" fill="#6b716b"/>
+    </g>
+  </g>
+</svg>

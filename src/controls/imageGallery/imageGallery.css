@@ -1,0 +1,53 @@
+.awssld__content > img,
+.awssld__content > video {
+    opacity: 0.7;
+}
+
+.caption {
+    font-size: 36px;
+    line-height: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* color: white;
+    font-weight: bold; */
+}
+
+.caption p {
+    /* background-color: rgba(22, 105, 54, 0.7); */
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    .caption {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .caption {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+.fa {
+    padding: 16px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
