@@ -21,7 +21,7 @@
         "pm2-build:production": "env-cmd -f .env.production next build && pm2 start ./node_modules/next/dist/bin/next",
         "pm2-start:production": "env-cmd -f .env.production pm2 start ./node_modules/next/dist/bin/next",
         "build:uat": "env-cmd -f .env.uat next build",
-        "start:uat": "env-cmd -f .env.uat next start -p 3001"
+        "start:uat": "next start -p 3001"
     },
     "dependencies": {
         "@babel/plugin-proposal-decorators": "^7.10.5",
