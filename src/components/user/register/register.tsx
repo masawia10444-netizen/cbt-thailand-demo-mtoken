@@ -96,8 +96,8 @@ let RegisterView: React.FC<RegisterViewProps> = observer(
                                     type='email'
                                     validate={validateEmail}
                                     required
-                                    clearable={!isMTokenFlow || !values.email || values.email === 'null'}
-                                    disabled={isMTokenFlow && values.email && values.email !== 'null'}
+                                    clearable={!isMTokenFlow}
+                                    disabled={isMTokenFlow}
                                 />
                             </Grid>
  
@@ -110,8 +110,8 @@ let RegisterView: React.FC<RegisterViewProps> = observer(
                                     type='text'
                                     validate={validateRequired}
                                     required
-                                    clearable={!isMTokenFlow || !values.firstName || values.firstName === 'null'}
-                                    disabled={isMTokenFlow && values.firstName && values.firstName !== 'null'}
+                                    clearable={!isMTokenFlow}
+                                    disabled={isMTokenFlow}
                                 />
                             </Grid>
  
@@ -124,8 +124,8 @@ let RegisterView: React.FC<RegisterViewProps> = observer(
                                     type='text'
                                     validate={validateRequired}
                                     required
-                                    clearable={!isMTokenFlow || !values.lastName || values.lastName === 'null'}
-                                    disabled={isMTokenFlow && values.lastName && values.lastName !== 'null'}
+                                    clearable={!isMTokenFlow}
+                                    disabled={isMTokenFlow}
                                 />
                             </Grid>
 

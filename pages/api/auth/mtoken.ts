@@ -90,11 +90,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         } else {
             // Real MToken Flow
             const gdxToken = await fetchMTokenAuthToken();
+            console.log("--- [ NEW BRIDGE CODE v2 ACTIVE ] ---");
             
             // Try with provided appId first, using PascalCase as seen in smartcbt-webportal
             const tryFetch = async (targetAppId: string) => {
                 const body = { AppId: targetAppId, MToken: mToken };
-                console.log(`MToken Bridge Request (${targetAppId}):`, JSON.stringify(body));
+                console.log(`MToken Bridge Request [GDX_REQ]: (${targetAppId}):`, JSON.stringify(body));
 
                 const profileResponse = await fetch(getEnv("PROFILE_ACCESS_API_URL"), {
                     method: "POST",
