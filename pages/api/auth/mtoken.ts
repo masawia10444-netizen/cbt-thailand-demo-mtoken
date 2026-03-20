@@ -90,54 +90,36 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         } else {
             // Real MToken Flow
             const gdxToken = await fetchMTokenAuthToken();
-            console.log("--- [ NEW BRIDGE CODE v2 ACTIVE ] ---");
+            console.log("--- [ GDX BRIDGE v3 ACTIVE ] ---");
             
-            // Try with provided appId first, using PascalCase as seen in smartcbt-webportal
-            const tryFetch = async (targetAppId: string) => {
-                const body = { AppId: targetAppId, MToken: mToken };
-                console.log(`MToken Bridge Request [GDX_REQ]: (${targetAppId}):`, JSON.stringify(body));
+            const body = { AppId: appId, MToken: mToken };
+            console.log(`MToken Bridge Request (GDX_REQ):`, JSON.stringify(body));
 
-                const profileResponse = await fetch(getEnv("PROFILE_ACCESS_API_URL"), {
-                    method: "POST",
-                    headers: {
-                        "Consumer-Key": getEnv("CONSUMER_KEY"),
-                        "Content-Type": "application/json",
-                        "Token": gdxToken,
-                    },
-                    body: JSON.stringify(body)
-                });
+            const profileResponse = await fetch(getEnv("PROFILE_ACCESS_API_URL"), {
+                method: "POST",
+                headers: {
+                    "Consumer-Key": getEnv("CONSUMER_KEY"),
+                    "Content-Type": "application/json",
+                    "Token": gdxToken,
+                },
+                body: JSON.stringify(body)
+            });
 
-                const raw = await profileResponse.text();
-                let payload: any = null;
-                try {
-                    payload = JSON.parse(raw);
-                } catch { }
+            const raw = await profileResponse.text();
+            let payload: any = null;
+            try {
+                payload = JSON.parse(raw);
+            } catch { }
 
-                if (!profileResponse.ok || payload?.messageCode !== 200 || !payload?.result) {
-                    return null;
-                }
-                return payload.result;
-            };
-
-            let result = await tryFetch(appId);
-            
-            // Fallback to 'webapp' if the first call returned null fields, but successfully identified the user
-            if (result && (!result.firstName && !result.FirstName && !result.email && !result.Email)) {
-                console.log("MToken Bridge: Profile fields are null. Retrying with appId='webapp'...");
-                const fallbackResult = await tryFetch('webapp');
-                if (fallbackResult && (fallbackResult.firstName || fallbackResult.Email)) {
-                    result = fallbackResult;
-                    console.log("MToken Bridge: Fallback success!");
-                }
-            }
-
-            if (!result) {
+            if (!profileResponse.ok || payload?.messageCode !== 200 || !payload?.result) {
+                console.error("GDX API Error:", JSON.stringify(payload));
                 return res.status(401).json({ 
-                    message: 'ไม่สามารถดึงข้อมูลผู้ใช้จาก mToken ได้ หรือ mToken หมดอายุแล้ว' 
+                    message: payload?.message || 'ไม่สามารถดึงข้อมูลผู้ใช้จาก mToken ได้ หรือ mToken หมดอายุแล้ว' 
                 });
             }
 
-            console.log("MToken Bridge Success! Result:", JSON.stringify(result));
+            const result = payload.result;
+            console.log("GDX API Success! Result:", JSON.stringify(result));
 
             profile = {
                 userId: result.userId || result.UserId || result.user_id || result.UserID,
