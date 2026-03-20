@@ -174,9 +174,17 @@ const useLogin = () => {
             appId = appId || urlParams.get('appId')
         }
 
-        if (mToken && appId && !UserStore.userInfo.email && !hasProcessedMToken.current) {
+        if (mToken && appId && !UserStore.userInfo.email) {
             const handleMTokenLogin = async () => {
+                // Nuclear deduplication: window-level guard
+                if (typeof window !== 'undefined') {
+                    if ((window as any)._mtoken_processing === mToken) return
+                    ;(window as any)._mtoken_processing = mToken
+                }
+
+                if (hasProcessedMToken.current) return
                 hasProcessedMToken.current = true
+                
                 try {
                     // Force removal of mToken/appId from URL internally to prevent re-processing
                     if (typeof window !== 'undefined') {
