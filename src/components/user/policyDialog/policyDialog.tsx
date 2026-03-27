@@ -121,16 +121,19 @@ export default observer(PolicyDialog)
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         container: {
-            padding: '10px 20px 20px 20px',
+            padding: '10px 10px 20px 10px',
             position: 'relative',
+            [theme.breakpoints.up('sm')]: {
+                padding: '10px 20px 20px 20px',
+            },
             [theme.breakpoints.up('md')]: {
                 padding: '10px 50px 20px 50px',
             },
         },
         image: {
-            width: 120,
+            width: 100,
             [theme.breakpoints.up('sm')]: {
-                width: 150,
+                width: 120,
             },
             [theme.breakpoints.up('md')]: {
                 width: 150,
@@ -142,11 +145,12 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         policyTitle: {
             color: theme.colors.mint,
-            marginTop: 10,
+            marginTop: 20,
             marginBottom: 10,
-            fontSize: 16,
+            fontWeight: 'bold',
+            fontSize: 14,
             [theme.breakpoints.up('sm')]: {
-                marginTop: 0,
+                marginTop: 10,
                 fontSize: 20,
             },
             [theme.breakpoints.up('md')]: {
@@ -158,7 +162,7 @@ const useStyles = makeStyles((theme: Theme) =>
             color: theme.colors.textBlack,
             marginBottom: 20,
             lineHeight: 1.5,
-            fontSize: 12,
+            fontSize: 11,
             [theme.breakpoints.up('md')]: {
                 fontSize: 14,
             },
@@ -199,18 +203,38 @@ const useStyles = makeStyles((theme: Theme) =>
             },
         },
         detailContent: {
-            textIndent: 34,
-            lineHeight: 1.5,
-            marginTop: 20,
+            textIndent: 20,
+            lineHeight: 1.4,
+            marginTop: 15,
+            fontSize: 13,
+            [theme.breakpoints.up('sm')]: {
+                textIndent: 34,
+                marginTop: 20,
+                lineHeight: 1.5,
+                fontSize: 16, // assuming default h5 is around here
+            },
         },
         personalTitle: {
             marginTop: 30,
-            textIndent: 34,
+            textIndent: 20,
             fontFamily: 'Prompt-SemiBold',
+            [theme.breakpoints.up('sm')]: {
+                textIndent: 34,
+            },
         },
         personalDetail: {
             marginTop: 20,
-            textIndent: 34,
+            textIndent: 20,
+            [theme.breakpoints.up('sm')]: {
+                textIndent: 34,
+            },
+        },
+        radioGroup: {
+            marginLeft: 20,
+            marginTop: 10,
+            [theme.breakpoints.up('sm')]: {
+                marginLeft: 34,
+            },
         },
     }),
 )

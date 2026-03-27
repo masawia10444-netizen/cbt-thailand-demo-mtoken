@@ -95,7 +95,7 @@ const PersonalDataView = ({ handleCheckPDPA_1, handleCheckPDPA_2, classes }: Per
                     }
                 </Typography>
 
-                <Grid item xs={12} sm={10} md={6} style={{ marginLeft: 34, marginTop: 10 }}>
+                <Grid item xs={12} sm={10} md={6} className={classes.radioGroup}>
                     <Field
                         name='isAcceptPDPA'
                         component={RadioButton}
@@ -139,7 +139,7 @@ const PersonalDataView = ({ handleCheckPDPA_1, handleCheckPDPA_2, classes }: Per
                     }
                 </Typography>
 
-                <Grid item xs={12} sm={10} md={6} style={{ marginLeft: 34, marginTop: 10 }}>
+                <Grid item xs={12} sm={10} md={6} className={classes.radioGroup}>
                     <Field
                         name='isAcceptPDPA2'
                         component={RadioButton}

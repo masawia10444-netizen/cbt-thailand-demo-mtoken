@@ -89,10 +89,10 @@ const ConfirmationDialog = ({
             {showButtonOk && (
                 <DialogActions
                     style={{
-                        alignContent: 'center',
-                        display: 'flex',
+                        padding: isMobileView ? '15px 20px' : '20px 40px',
+                        borderTop: '1px solid #E0E0E0',
+                        marginTop: 10,
                         justifyContent: 'center',
-                        alignItems: 'center',
                     }}
                 >
                     <Button
@@ -197,13 +197,13 @@ const useStyles = makeStyles((theme: Theme) =>
             borderRadius: 10,
             textAlign: 'center',
             padding: '5px 15px',
-            minWidth: 200,
-            minHeight: 200,
-            maxWidth: 320,
+            minWidth: 280,
+            maxWidth: '90vw',
             [theme.breakpoints.up('sm')]: {
                 padding: '15px 60px',
                 minWidth: 480,
                 minHeight: 390,
+                maxWidth: 600,
                 width: 'unset',
             },
             [theme.breakpoints.up('lg')]: {

@@ -115,8 +115,8 @@ const useStyles = makeStyles((theme: Theme) =>
                 boxShadow: '0px 0px 0px 0px',
             },
             '&:disabled': {
-                backgroundColor: theme.colors.lightGray,
-                color: theme.colors.grey,
+                backgroundColor: '#E6E6E6',
+                color: '#808080',
             },
         },
         save: {},
@@ -129,8 +129,8 @@ const useStyles = makeStyles((theme: Theme) =>
                 // color: theme.colors.darkGreen,
             },
             '&:disabled': {
-                backgroundColor: theme.colors.lightGray,
-                color: theme.colors.grey,
+                backgroundColor: '#E6E6E6',
+                color: '#808080',
             },
         },
         rounded: {
@@ -138,8 +138,8 @@ const useStyles = makeStyles((theme: Theme) =>
             boxShadow: '0px 20px 20px #B1FF0D47',
             ...theme.fontStyle.prompt.body1,
             '&:disabled': {
-                backgroundColor: theme.colors.lightGray,
-                color: theme.colors.grey,
+                backgroundColor: '#E6E6E6',
+                color: '#808080',
             },
         },
         transparent: {
@@ -150,8 +150,8 @@ const useStyles = makeStyles((theme: Theme) =>
                 boxShadow: '0px 0px 0px 0px',
             },
             '&:disabled': {
-                backgroundColor: theme.colors.lightGray,
-                color: theme.colors.grey,
+                backgroundColor: '#E6E6E6',
+                color: '#808080',
             },
         },
         add: {

@@ -49,17 +49,16 @@ const useRegister = ({}) => {
 
             if (registerData.statusCode === 1) {
                 if (isMTokenFlow) {
-                    const loginData = await UserStore.login({ 
-                        email: params.email, 
-                        password: encryptedPassword 
-                    }, true)
+                    const loginData = await UserStore.login(
+                        {
+                            email: params.email,
+                            password: encryptedPassword,
+                        },
+                        true,
+                    )
 
                     if (loginData.statusCode === 1) {
-                        if (!UserStore.userInfo.isAcceptPolicy || UserStore.userInfo.isAcceptPDPA === null) {
-                            await LayoutStore.setOpenPolicyDialog(true)
-                        } else {
-                            router.replace('/')
-                        }
+                        router.replace('/')
                         return
                     } else {
                         router.replace('/login')
@@ -100,11 +99,11 @@ const useRegister = ({}) => {
     }
 
     const handleCheckboxChange = (open: boolean) => {
-        // MToken Fix: Don't open the dialog on checkbox click! 
-        // We will open it once in handleSubmit after registration success 
-        // so we have a userID to save the PDPA choices.
-        // LayoutStore.setOpenPolicyDialog(open) 
-        handleClosePolicyDialog()
+        if (open) {
+            LayoutStore.setOpenPolicyDialog(true)
+        } else {
+            handleClosePolicyDialog()
+        }
     }
 
     const handleClosePolicyDialog = () => {
