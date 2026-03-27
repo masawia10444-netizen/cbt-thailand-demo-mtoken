@@ -32,6 +32,12 @@ export default function MyApp(props) {
     }
 
     useEffect(() => {
+        if (typeof window !== 'undefined' && (window as any).czpSdk?.setBackButtonVisible) {
+            ;(window as any).czpSdk.setBackButtonVisible(true)
+        }
+    }, [])
+
+    useEffect(() => {
         AOS.init({
             // Global settings:
             disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function

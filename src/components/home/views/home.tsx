@@ -120,9 +120,12 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         banner: {
             backgroundSize: 'cover',
-            height: '100vh',
+            height: '70vh',
             width: '100%',
             objectFit: 'cover',
+            [theme.breakpoints.up('sm')]: {
+                height: '100vh',
+            },
         },
         search: {
             position: 'absolute',
