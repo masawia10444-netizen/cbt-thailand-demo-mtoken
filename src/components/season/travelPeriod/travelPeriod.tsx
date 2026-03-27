@@ -172,12 +172,8 @@ let TravelPeriodView: React.FC<travelPeriodViewProps> = ({
     }
 
     const handleClickCard = (id: number) => {
-        const link = process.env.NEXT_PUBLIC_LINK + '/community/content/' + id
-        if (process.browser) {
-            window.open(link)
-        } else {
-            router.push(link)
-        }
+        const link = '/community/content/' + id
+        router.push(link)
     }
 
     useBreadcrumbs({ contentName: setTitleName() })

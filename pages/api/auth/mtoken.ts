@@ -90,10 +90,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         } else {
             // Real MToken Flow
             const gdxToken = await fetchMTokenAuthToken();
-            console.log("--- [ GDX BRIDGE v3 ACTIVE ] ---");
             
             const body = { AppId: appId, MToken: mToken };
-            console.log(`MToken Bridge Request (GDX_REQ):`, JSON.stringify(body));
 
             const profileResponse = await fetch(getEnv("PROFILE_ACCESS_API_URL"), {
                 method: "POST",
@@ -112,14 +110,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             } catch { }
 
             if (!profileResponse.ok || payload?.messageCode !== 200 || !payload?.result) {
-                console.error("GDX API Error:", JSON.stringify(payload));
+                console.error("[MToken Bridge] GDX API Error:", JSON.stringify(payload));
                 return res.status(401).json({ 
                     message: payload?.message || 'ไม่สามารถดึงข้อมูลผู้ใช้จาก mToken ได้ หรือ mToken หมดอายุแล้ว' 
                 });
             }
 
             const result = payload.result;
-            console.log("GDX API Success! Result:", JSON.stringify(result));
+            console.log("[MToken Bridge] Profile retrieved successfully for userId:", result.userId || result.UserId);
 
             profile = {
                 userId: result.userId || result.UserId || result.user_id || result.UserID,

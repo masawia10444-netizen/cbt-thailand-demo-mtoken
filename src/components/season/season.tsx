@@ -293,12 +293,8 @@ const RenderView = (props: TRenderView) => {
     ]
 
     const handleClickAll = (id: string) => {
-        const link = process.env.NEXT_PUBLIC_LINK + '/community/travelPeriod/' + id
-        if (process.browser) {
-            window.open(link)
-        } else {
-            router.push(link)
-        }
+        const link = '/community/travelPeriod/' + id
+        router.push(link)
     }
 
     return (
@@ -482,12 +478,8 @@ let SeasonView: React.FC<seasonViewProps> = ({
     const lang = i18n.language.toUpperCase()
 
     const handleClickCard = (id: number) => {
-        const link = process.env.NEXT_PUBLIC_LINK + '/community/content/' + id
-        if (process.browser) {
-            window.open(link)
-        } else {
-            router.push(link)
-        }
+        const link = '/community/content/' + id
+        router.push(link)
     }
 
     return (

@@ -23,12 +23,8 @@ let CommunityTravelByCommunityView: React.FC<CommunityTravelByCommunityViewProps
         const lang = i18n.language.toUpperCase()
 
         const handleCardClick = (id: number) => {
-            const link = process.env.NEXT_PUBLIC_LINK + `/community/content/${id}`
-            if (process.browser) {
-                window.open(link)
-            } else {
-                router.push(link)
-            }
+            const link = `/community/content/${id}`
+            router.push(link)
         }
 
         const uploadUrl = process.env.NEXT_PUBLIC_UPLOAD_URL

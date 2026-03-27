@@ -58,12 +58,8 @@ let ActivityView: React.FC<activityViewProps> = observer(
         const lang = i18n.language.toUpperCase()
 
         const handleClickCard = (id: number) => {
-            const link = process.env.NEXT_PUBLIC_LINK + '/attraction/content/' + id
-            if (process.browser) {
-                window.open(link)
-            } else {
-                router.push(link)
-            }
+            const link = '/attraction/content/' + id
+            router.push(link)
         }
 
         type ValuesType = {

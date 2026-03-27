@@ -171,7 +171,7 @@ let RegisterView: React.FC<RegisterViewProps> = observer(
                                                 color='secondary'
                                                 href={process.env.NEXT_PUBLIC_WEBSITE_PRIVACY_POLICY_URL}
                                                 style={{ pointerEvents: 'auto' }}
-                                                target='_blank'
+                                                target='_self'
                                             >
                                                 {t('REGISTER.POLICY')}
                                             </Link>

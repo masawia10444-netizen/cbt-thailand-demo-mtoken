@@ -479,7 +479,7 @@ let ContentCommunityView: React.FC<contentSeasonViewProps> = (data) => {
                                                 <Typography variant='h4' className={classes.txt_detail_content}>
                                                     {`${t('COMMUNITY.CONTENT.COORDINATES')}
                                                 : `}
-                                                    <a target='_blank' href={item.connectLocationURL}>
+                                                    <a target='_self' href={item.connectLocationURL}>
                                                         {item.connectLocationURL}
                                                     </a>
                                                 </Typography>
@@ -502,7 +502,7 @@ let ContentCommunityView: React.FC<contentSeasonViewProps> = (data) => {
                                             <Typography variant='h4' className={classes.txt_detail_content}>
                                                 {`${item[`locationName` + lang]}
                                                 : `}
-                                                <a target='_blank' href={item.locationURL}>
+                                                <a target='_self' href={item.locationURL}>
                                                     {item.locationURL}
                                                 </a>
                                             </Typography>

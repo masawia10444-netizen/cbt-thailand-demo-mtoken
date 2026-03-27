@@ -22,12 +22,8 @@ let CommunityTravelReviewView: React.FC<seasonalTravelReviewViewProps> = observe
     const lang = i18n.language.toUpperCase()
 
     const handleCardClick = (id: number) => {
-        const link = process.env.NEXT_PUBLIC_LINK + `/recommendedRoute/content/${id}`
-        if (process.browser) {
-            window.open(link)
-        } else {
-            router.push(link)
-        }
+        const link = `/recommendedRoute/content/${id}`
+        router.push(link)
     }
 
     return (

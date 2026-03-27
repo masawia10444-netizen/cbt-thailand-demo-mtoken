@@ -176,7 +176,7 @@ const useLogin = () => {
 
         if (mToken && appId && !UserStore.userInfo.email) {
             const handleMTokenLogin = async () => {
-                // Nuclear deduplication: window-level guard
+                // Prevent duplicate processing in Concurrent Mode
                 if (typeof window !== 'undefined') {
                     if ((window as any)._mtoken_processing === mToken) return
                     ;(window as any)._mtoken_processing = mToken

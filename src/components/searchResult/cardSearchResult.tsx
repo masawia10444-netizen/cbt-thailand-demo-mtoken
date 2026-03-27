@@ -9,6 +9,8 @@ import { useTranslation } from 'react-i18next'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import ExpandLessIcon from '@material-ui/icons/ExpandLess'
 
+import { useRouter } from 'next/router'
+
 type CardResultPropsType = {
     title: string
     dataList: any[]
@@ -25,6 +27,7 @@ const cardSearchResult: FC<CardResultPropsType> = ({
 }) => {
     const classes = useStyles()
     const { t, i18n } = useTranslation()
+    const router = useRouter()
 
     const [displayAll, setDisplayAll] = useState(false)
 
@@ -33,8 +36,8 @@ const cardSearchResult: FC<CardResultPropsType> = ({
 
     const handleClickCard = (id: number | string) => {
         //console.log('id', id)
-        if (process.browser && contentPrefix) {
-            window.open(process.env.NEXT_PUBLIC_LINK + `/${contentPrefix}/content/${id}`)
+        if (contentPrefix) {
+            router.push(`/${contentPrefix}/content/${id}`)
         }
     }
 

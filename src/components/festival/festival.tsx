@@ -420,12 +420,8 @@ let FestivalView: React.FC<festivelViewProps> = ({
     const router = useRouter()
 
     const handleClickCard = useCallback((id: number) => {
-        const link = process.env.NEXT_PUBLIC_LINK + '/festival/content/' + id
-        if (process.browser) {
-            window.open(link)
-        } else {
-            router.push(link)
-        }
+        const link = '/festival/content/' + id
+        router.push(link)
     }, [])
 
     return (

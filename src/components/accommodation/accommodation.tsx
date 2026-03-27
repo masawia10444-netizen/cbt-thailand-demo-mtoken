@@ -445,12 +445,8 @@ let AccommodationView: React.FC<accommodationViewProps> = ({
     const lang = i18n.language.toUpperCase()
 
     const handleClickCard = (id: number) => {
-        const link = process.env.NEXT_PUBLIC_LINK + '/accommodation/content/' + id
-        if (process.browser) {
-            window.open(link)
-        } else {
-            router.push(link)
-        }
+        const link = '/accommodation/content/' + id
+        router.push(link)
     }
 
     return (

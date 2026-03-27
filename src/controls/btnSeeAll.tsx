@@ -25,7 +25,7 @@ const btnSeeAll: React.FC<Proptypes> = ({
     const classes = useStyles()
     return (
         <Link href={href}>
-            <a target='_blank' style={{ textDecoration: 'none' }}>
+            <a target='_self' style={{ textDecoration: 'none' }}>
                 <Button
                     className={clsx(classes.btnSeeAll, btnClassName)}
                     endIcon={<SeeAllIcon fontSize='small' className={clsx(classes.seeAllIcon, iconClassName)} />}

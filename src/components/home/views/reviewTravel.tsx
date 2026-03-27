@@ -21,12 +21,8 @@ let ReviewTravelView: React.FC<CommunityViewProps> = observer(({ reviewTravelLis
     const router = useRouter()
 
     const handleCardClick = (id: number) => {
-        const link = process.env.NEXT_PUBLIC_LINK + `/reviewTravel/content/${id}`
-        if (process.browser) {
-            window.open(link)
-        } else {
-            router.push(link)
-        }
+        const link = `/reviewTravel/content/${id}`
+        router.push(link)
     }
 
     return (
